@@ -10,10 +10,10 @@
     "index.html": "/index.html",
     "static/css/main.0a9e487e.chunk.css.map": "/static/css/main.0a9e487e.chunk.css.map",
     "static/js/2.5d35805b.chunk.js.LICENSE.txt": "/static/js/2.5d35805b.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/fondo.eb1b11be.jpg",
-    "./static/media/cafo.63c9c488.jpg": "/static/media/cafo.63c9c488.jpg",
-    "./static/media/mani.bb53fa7a.png": "/static/media/mani.bb53fa7a.png",
-    "static/media/semillas.88e643f4.png": "/static/media/semillas.88e643f4.png"
+    "static/media/index.css": "./static/media/fondo.eb1b11be.jpg",
+    "static/media/cafo.63c9c488.jpg": "./static/media/cafo.63c9c488.jpg",
+    "static/media/mani.bb53fa7a.png": "./static/media/mani.bb53fa7a.png",
+    "static/media/semillas.88e643f4.png": "./static/media/semillas.88e643f4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b0782146.js",
