@@ -1,17 +1,32 @@
-import React from 'react'
+import React, {useState}  from 'react';
+import PropTypes  from 'prop-types';
+import { Categories } from './Categories';
 
-export const Search = () => {
+export const Search = ({setBuscador}) => {
+    const [inputValue, setInputValue] = useState('')
+
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value)
+    }
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+
+        if(inputValue.trim().length > 2){
+            setBuscador(buscador=>[inputValue, ...buscador]);
+            setInputValue('');
+        }
+    }
     return (
         <>
-            <div class="container row">
-                <form class="col s12 m12 section scrollspy" autoComplete="off" id='Buscador'>
-                    <div class="input-field col s8 m8">
-                        <input id="first_name" type="text" class="validate"/>
-                        <label for="first_name">Productos</label>
+            <div className="container row ">
+                <form className="col s12 m12 section scrollspy" autoComplete="off" id='Buscador' onSubmit={handleSubmit}>
+                    <div className="input-field col s8 m8">
+                        <i className="material-icons prefix">search</i>
+                        <input placeholder="Buscador" id="first_name" type="text" className="validate" onChange={handleInputChange}/>
                     </div>
-                    <div class="input-field col s4 m4">
+                     <div className="input-field col s4 m4">
                         <select>
-                        <option value="1" selected>Todos</option>
+                        <option value="1" >Todos</option>
                         <option value="2">Salados</option>
                         <option value="3">Dulces</option>
                         <option value="4">Bebidas</option>
@@ -19,9 +34,10 @@ export const Search = () => {
                         <option value="6">Dulces tipicos</option>
                         </select>
                         <label>Categorias</label>
-                    </div>
+                    </div> 
                 </form>
             </div>
+            <Categories/>
         </>
     )
 }

@@ -23,13 +23,12 @@ export const Navbar = () => {
         <>
             <div id='navbar' className="navbar-fixed navbar-none ">
                 <nav>
-                    <div className="nav-wrapper white">
+                    <div className="nav-wrapper white ">
                     <a href="#!" className="brand-logo center orange-text">Logo</a>
                     <a href="#!" data-target="mobile-demo" className="sidenav-trigger right orange-text"><i className="material-icons">menu</i></a>
                     <ul className="right hide-on-med-and-down">
                         <li><a className='orange-text' href="#Inicio">Inicio</a></li>
-                        <li><a className='orange-text' href="#Categories">Categorias</a></li>
-                        <li><a className='orange-text' href="#Buscador">Buscador</a></li>
+                        <li><a className='orange-text' href="#Productos">Productos</a></li>
                         <li><a className='orange-text' href="#Contacto">Contactanos</a></li>
                     </ul>
                     </div>
